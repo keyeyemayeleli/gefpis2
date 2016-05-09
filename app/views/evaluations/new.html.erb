@@ -1,0 +1,16 @@
+<h1>Evaluations#new</h1>
+<p>Find me in app/views/evaluations/new.html.erb</p>
+
+<%= simple_form_for @evaluation do |f| %>
+
+	<%= f.association :member %>
+	<%= f.input :eval_name %>
+	<%= f.input :tutoring_comments %>
+	<%= f.input :math_module_comments %>
+	<%= f.input :math_sw_comments %>
+	<%= f.input :eng_comments %>
+	<%= f.input :eng_sw_comments %>
+	<%= f.input :suggestions %>
+	<%= f.button :submit, "Add evaluation" %>
+
+<% end %>

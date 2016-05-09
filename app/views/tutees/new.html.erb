@@ -1,0 +1,23 @@
+<h1>Tutees#new</h1>
+<p>Find me in app/views/tutees/new.html.erb</p>
+
+<%= simple_form_for @tutee, url: tutees_path do |f| %>
+	<%= f.input :first_name %>
+	<%= f.input :last_name %>
+	<%= f.input :school %>
+	<%= f.input :math_grade %>
+	<%= f.input :eng_grade %>
+	<%= f.input :address %>
+	<%= f.input :father_name %>
+	<%= f.input :father_occupation %>
+	<%= f.input :mother_name %>
+	<%= f.input :mother_occupation %>
+	<%= f.input :ambition %>
+	<%= f.input :fav_subject %>
+	<%= f.input :fav_food %>
+	<%= f.input :fav_color %>
+	<%= f.input :fav_movie %>
+	<%= f.input :current_module %>
+	<%= f.input :group_no %>
+	<%= f.button :submit, "Add tutee" %>
+<% end %>

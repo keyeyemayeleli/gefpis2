@@ -1,0 +1,13 @@
+<h1>Lessons#new</h1>
+<p>Find me in app/views/lessons/new.html.erb</p>
+
+<%= simple_form_for @lesson do |f| %>
+	<%= f.association :member %>
+	<%= f.input :file_name %>
+	<%= f.input :subject %>
+	<%= f.input :upload_date %>
+	<%= f.input :topic %>
+	<%= f.button :submit, "Add module" %>
+	<%= f.file_field :file_file_name %>
+<% end %>
+

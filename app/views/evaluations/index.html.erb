@@ -1,0 +1,19 @@
+<h1>Evaluations#index</h1>
+<p>Find me in app/views/evaluations/index.html.erb</p>
+
+<table border='1'>
+
+	<% @evaluations.each do |evaluation| %>
+
+		<tr>
+			<td> <%= evaluation.eval_name %> </td>
+			<td> <%= evaluation.tutoring_comments %> </td>
+			<td> <%= evaluation.member.first_name %> </td>
+			<td> <%= link_to 'Show', evaluation_path(evaluation.eval_id) %></td>
+			<td> <%= link_to 'Edit', edit_evaluation_path(evaluation.eval_id) %></td>
+			<td> <%= link_to "Delete", evaluation_path(evaluation.eval_id), method: :delete, data: { confirm: "Are you sure?" } %></td>
+		</tr>
+
+	<% end %>
+
+</table>

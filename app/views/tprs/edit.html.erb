@@ -1,0 +1,16 @@
+<h1>Tprs#edit</h1>
+<p>Find me in app/views/tprs/edit.html.erb</p>
+
+<%= simple_form_for @tpr do |f| %>
+
+	<%= f.association :member %>
+	<%= f.association :tutee %>
+	<%= f.association :lesson %>
+	<%= f.input :week_no %>
+	<%= f.input :school %>
+	<%= f.input :strengths %>
+	<%= f.input :weaknesses %>
+	<%= f.input :actions %>
+	<%= f.button :submit, "Edit evaluation" %>
+
+<% end %>
