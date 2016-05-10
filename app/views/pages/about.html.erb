@@ -1,102 +1,109 @@
-    <body class="main-white">
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">English</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Math</a></li>
-        </ul>
-        <ul id="dropdown2" class="dropdown-content">
-          <li><a href="#!">Tutee Profiles</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Progress Reports</a></li>
-        </ul>
-        <ul id="dropdown3" class="dropdown-content">
-          <li><a href="#!">Administrator</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Data Analysis Team</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Modules Team</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Tutors</a></li>
-        </ul>
-        <ul id="dropdown4" class="dropdown-content">
-          <li><a href="#!">A</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">B</a></li>
-        </ul>
-        <nav>
-          <div class="nav-wrapper main-white">
-            <ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
-              <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
-              <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
-              <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
-            </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down open-sans">
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-          </div>
-        </nav>
+<body class="main-white">
+  
+  <!--navbar-dropdown-->   
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">English</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Math</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">Tutee Profiles</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Progress Reports</a></li>
+  </ul>
+  <ul id="dropdown3" class="dropdown-content">
+    <li><a href="#!">Administrator</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Data Analysis Team</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Modules Team</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Tutors</a></li>
+  </ul>
+  <ul id="dropdown4" class="dropdown-content">
+    <li><a href="#!">A</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">B</a></li>
+  </ul>
+  
+  <!--navbar-->
+  <nav>
+    <div class="nav-wrapper main-white">
+      <ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
+        <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
+        <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down open-sans">
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <div class="col s12">
-          <center>
-          <br>
-          <br>
-          <a class="main-green-text crete-round"><font size="6">Export Data</font></a>          
-          <br>
-          <%= image_tag("line3.png", height: '55')%>
-          <br>
-          </center>
-        </div>
+	<!--header-->
+    <div class="col s12">
+    	<center>
+        	<br>
+        	<br>
+          	<a class="main-green-text crete-round"><font size="6">Export Data</font></a>
+          	<br>
+          	<%= image_tag("line3.png", height: '55')%>
+          	<br>
+        </center>
+    </div>
 
-        <div class="row">
-          <div class="col s4 offset-s4">
-            <div class="card open-sans main-white">
-              <div class="card-content">
-                <div class="row">
-                  <div class="col s12">
-                    <form action="#">   
-                      <br>                   
-                      <p>
-                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-1" checked="checked" />
-                        <label for="filled-in-box-1">Modules</label>
-                      </p>
-                      <p>
-                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-2" checked="checked" />
-                        <label for="filled-in-box-2">Tutee Account Database</label>
-                      </p>
-                      <p>
-                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-3" checked="checked" />
-                        <label for="filled-in-box-3">Tutor Account Database</label>
-                      </p>
-                      <p>                        
-                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-4" checked="checked" />
-                        <label for="filled-in-box-4">Data Analysis Account Database</label>
-                      </p>
-                      <p>
-                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-5" checked="checked" />
-                        <label for="filled-in-box-5">Modules Account Database</label>
-                      </p>
-                      <p>
-                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-6" checked="checked" />
-                        <label for="filled-in-box-6">Consolidated Worksheet Results</label>
-                      </p>
-                    </form>
-                  </div>                   
-                </div>
-                <div class="row">
-                  <div class="col s12">
-                    <div class="btn btn-main-green">
-                      <span>Back</span>
-                    </div> 
-                    <div class="btn btn-main-green">
-                      <span>Upload</span>
-                    </div> 
-                  </div>                 
-                </div>                
-              </div>
+    <!--card-->
+    <div class="row">
+        <div class="col s4 offset-s4">
+    	    <div class="card open-sans main-white">
+        	    <div class="card-content">
+            	    <div class="row">
+                  		<div class="col s12">
+                    		<form action="#">   
+                      			<br>                   
+                      			<p>
+		                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-1" checked="checked" />
+		                        <label for="filled-in-box-1">Modules</label>
+                      			</p>
+                      			<p>
+		                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-2" checked="checked" />
+		                        <label for="filled-in-box-2">Tutee Account Database</label>
+                      			</p>
+                      			<p>
+		                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-3" checked="checked" />
+		                        <label for="filled-in-box-3">Tutor Account Database</label>
+                      			</p>
+                      			<p>                        
+		                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-4" checked="checked" />
+		                        <label for="filled-in-box-4">Data Analysis Account Database</label>
+                      			</p>
+                      			<p>
+		                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-5" checked="checked" />
+		                        <label for="filled-in-box-5">Modules Account Database</label>
+                      			</p>
+                      			<p>
+		                        <input type="checkbox" class="checkbox-green filled-in" id="filled-in-box-6" checked="checked" />
+		                        <label for="filled-in-box-6">Consolidated Worksheet Results</label>
+                      			</p>
+                    		</form>
+                  		</div>                   
+                	</div>
+                	<div class="row open-sans">
+                  		<div class="col s12">
+                    		<div class="btn btn-main-green">
+                      			<span>Back</span>
+                    		</div> 
+                    		<div class="btn btn-main-green">
+                      			<span>Upload</span>
+                    		</div> 
+                  		</div>                 
+                	</div>                
+              	</div>
             </div>
-          </div>
         </div>
-    </body>
+    </div>
+
+</body>

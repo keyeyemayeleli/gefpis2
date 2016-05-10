@@ -1,134 +1,104 @@
-    <body class="main-white">
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">English</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Math</a></li>
-        </ul>
-        <ul id="dropdown2" class="dropdown-content">
-          <li><a href="#!">Tutee Profiles</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Progress Reports</a></li>
-        </ul>
-        <ul id="dropdown3" class="dropdown-content">
-          <li><a href="#!">Administrator</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Data Analysis Team</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Modules Team</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">Tutors</a></li>
-        </ul>
-        <ul id="dropdown4" class="dropdown-content">
-          <li><a href="#!">A</a></li>
-          <li class="divider"></li>
-          <li><a href="#!">B</a></li>
-        </ul>
-        <nav>
-          <div class="nav-wrapper main-white">
-            <ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
-              <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
-              <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
-              <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
-            </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down open-sans">
-              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
-          </div>
-        </nav>
+<body class="main-white">
+  
+  <!--navbar-dropdown-->   
+  <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">English</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Math</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#!">Tutee Profiles</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Progress Reports</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+      <li><a href="#!">Administrator</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Data Analysis Team</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Modules Team</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Tutors</a></li>
+    </ul>
+    <ul id="dropdown4" class="dropdown-content">
+      <li><a href="#!">A</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">B</a></li>
+    </ul>
+  
+    <!--navbar-->
+    <nav>
+      <div class="nav-wrapper main-white">
+          <ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
+            <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
+            <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down open-sans">
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+      </div>
+    </nav>
 
-        <div class="col s12">
-          <center>
-          <br>
-          <br>
-          <a class="main-green-text crete-round"><font size="6">Evaluations</font></a>          
-          <br>
-          <%= image_tag("line3.png", height: '55')%>
-          <br>
-          <a class="waves-effect waves-light btn btn-main-green open-sans">Create</a>
-          <br>
-          <br>
-          </center>
-        </div>
-        <!--table--> 
-        <div class="container">
-          <div align="left" class="input-field sort-filter open-sans">
-            <select>
-              <option value="1">Date & Time Created</option>
-              <option value="2">Name</option>
-              <option value="3">Created By</option>
-              <option value="4">Code</option>
-            </select>
-            <label>Sort By</label>
-          </div>
-          <table class="bordered">
-              <thead class="crete-round">
-                <tr>
-                    <th data-field="name"><font size="4">Code</font></th>
-                    <th data-field="subject"><font size="4">Evaluation Name</font></th>
-                    <th data-field="datetime"><font size="4">Date & Time Created</font></th>
-                    <th data-field="uploaded"><font size="4">Created By</font></th>
-                    <th data-field="status"><font size="4">Status</font></th>
-                    <th data-field="actions"><center><font size="4">Actions</font></center></th>
-                </tr>
-              </thead>
-              <tbody class="open-sans">
-                <tr>
-                  <td>1114</td>
-                  <td>Evaluation-7</td>
-                  <td>2015-12-04 11:59:30</td>
-                  <td>Jakey Fausto</td>
-                  <td>Submitted</td>
-                  <td>
-                    <center>
-                    <a class="waves-effect waves-light btn btn-main-green">View</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Update</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Delete</a>
-                    </center>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1113</td>
-                  <td>Evaluation-6</td>
-                  <td>2015-12-04 11:59:30</td>
-                  <td>Jeo Marcos</td>
-                  <td>Submitted</td>
-                  <td>
-                    <center>
-                    <a class="waves-effect waves-light btn btn-main-green">View</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Update</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Delete</a>
-                    </center>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2112</td>
-                  <td>Evaluation-5</td>
-                  <td>2015-12-04 11:59:30</td>
-                  <td>Pau Era</td>
-                  <td>Pending</td>
-                  <td>
-                    <center>
-                    <a class="waves-effect waves-light btn btn-main-green">View</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Update</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Delete</a>
-                    </center>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="container" align="right">
-            <a class="main-green-text" href="#">Download All</a>
-            <a class="main-green-text"> | </a>
-            <a class="main-green-text" href="#">Delete All</a>
-          </div>
-        </div>
+  <!--header-->  
+  <div class="col s12">
+    <center>
+      <br>
+      <br>
+      <a class="main-green-text crete-round"><font size="6">Evaluations</font></a>      
+      <br>
+      <%=image_tag("line3.png" , height:'55')%>
+      <br>
+      <a class="waves-effect waves-light btn btn-main-green open-sans">Create</a>
+      <br>
+      <br>
+      </center>
+  </div>
 
-        <center>
-          <ul class="pagination open-sans">
+  <!--table--> 
+    <!--search-bar-->
+  <div class="container">  
+    <table class="bordered">
+      <thead class="table-header">
+        <tr>
+          <th data-field="name">Code</th>
+          <th data-field="subject">Evaluation Name</th>
+          <th data-field="datetime">Date & Time Created</th>
+          <th data-field="uploaded">Created By</th>
+          <th data-field="status">Status</th>
+          <th data-field="actions"><center>Actions</center></th>
+        </tr>
+      </thead>
+      <tbody class="open-sans">
+        <tr>
+          <td>1114</td>
+          <td>Evaluation-7</td>
+          <td>2015-12-04 11:59:30</td>
+          <td>Jakey Fausto</td>
+          <td>Submitted</td>
+          <td>
+            <center>
+              <a class="waves-effect waves-light btn btn-main-green">View</a>
+              <a class="waves-effect waves-light btn btn-main-green">Update</a>
+              <a class="waves-effect waves-light btn btn-main-green">Delete</a>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container open-sans" align="right">
+    <a class="main-green-text" href="#">Download All</a>
+    <a class="main-green-text"> | </a>
+    <a class="main-green-text" href="#">Delete All</a>
+  </div>
+  
+  <!--pagination-->
+  <center>
+    <ul class="pagination open-sans">
 			<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
 			<li class="btn-main-green active"><a href="#!">1</a></li>
 			<li class="waves-effect"><a href="#!">2</a></li>
@@ -136,71 +106,60 @@
 			<li class="waves-effect"><a href="#!">4</a></li>
 			<li class="waves-effect"><a href="#!">5</a></li>
 			<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-		  </ul>
-        </center>
+		</ul>
+  </center>
 
-      <div class="container">
-          <a class="main-green-text crete-round"><font size="5">My Evaluations</font></a> 
-      </div>
-      <div class="container">
-           <table class="bordered">
-              <thead class="crete-round">
-                <tr>
-                    <th data-field="name"><font size="4">Code</font></th>
-                    <th data-field="subject"><font size="4">Evaluation Name</font></th>
-                    <th data-field="datetime"><font size="4">Date & Time Created</font></th>
-                    <th data-field="uploaded"><font size="4">Created By</font></th>
-                    <th data-field="status"><font size="4">Status</font></th>
-                    <th data-field="actions"><center><font size="4">Actions</font></center></th>
-                </tr>
-              </thead>
-              <tbody class="open-sans">
-                <tr>
-                  <td>1114</td>
-                  <td>Evaluation-7</td>
-                  <td>2015-12-04 11:59:30</td>
-                  <td>Jakey Fausto</td>
-                  <td>Submitted</td>
-                  <td>
-                    <center>
-                    <a class="waves-effect waves-light btn btn-main-green">View</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Update</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Delete</a>
-                    </center>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1113</td>
-                  <td>Evaluation-6</td>
-                  <td>2015-12-04 11:59:30</td>
-                  <td>Jakey Fausto</td>
-                  <td>Submitted</td>
-                  <td>
-                    <center>
-                    <a class="waves-effect waves-light btn btn-main-green">View</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Update</a>
-                    <a class="waves-effect waves-light btn btn-main-green">Delete</a>
-                    </center>
-                  </td>
-                </tr>
-              </tbody>
-            </table>            
-        </div>
-        <div class="container" align="right">
-            <a class="main-green-text" href="#">Download All</a>
-            <a class="main-green-text"> | </a>
-            <a class="main-green-text" href="#">Delete All</a>
-        </div>
+  <!--my evals-->
+  <div class="container">
+    <a class="main-green-text crete-round"><font size="5">My Evaluations</font></a> 
+  </div>
+  <div class="container">
+    <table class="bordered">
+      <thead class="table-header">
+        <tr>
+          <th data-field="name">Code</th>
+          <th data-field="subject">Evaluation Name</th>
+          <th data-field="datetime">Date & Time Created</th>
+          <th data-field="uploaded">Created By</th>
+          <th data-field="status">Status</th>
+          <th data-field="actions"><center>Actions</center></th>
+        </tr>
+      </thead>
+      <tbody class="open-sans">
+        <tr>
+          <td>1114</td>
+          <td>Evaluation-7</td>
+          <td>2015-12-04 11:59:30</td>
+          <td>Jakey Fausto</td>
+          <td>Submitted</td>
+          <td>
+            <center>
+              <a class="waves-effect waves-light btn btn-main-green">View</a>
+              <a class="waves-effect waves-light btn btn-main-green">Update</a>
+              <a class="waves-effect waves-light btn btn-main-green">Delete</a>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>            
+  </div>
+  <div class="container open-sans" align="right">
+    <a class="main-green-text" href="#">Download All</a>
+    <a class="main-green-text"> | </a>
+    <a class="main-green-text" href="#">Delete All</a>
+  </div>
 
-        <center>
-          <ul class="pagination open-sans">
-      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="btn-main-green active"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  <!--pagination-->
+    <center>
+      <ul class="pagination open-sans">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="btn-main-green active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
       </ul>
-        </center>
+    </center>
+    
 </body>

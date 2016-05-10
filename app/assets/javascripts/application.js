@@ -12,12 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require materialize-sprockets
-//= require script
+//= require turbolinks
 //= require_tree .
-
-  $(document).ready(function() {
-    $('select').material_select();
-    
-  });
-         

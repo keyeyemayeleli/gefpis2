@@ -4,4 +4,8 @@ class Tutee < ActiveRecord::Base
 	has_many :worksheets
 	has_many :tprs
 
+	def to_s
+		"#{self.last_name}, #{self.first_name}"
+	end
+
 end

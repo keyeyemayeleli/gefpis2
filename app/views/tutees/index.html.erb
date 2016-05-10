@@ -1,7 +1,18 @@
 <h1>Tutees#index</h1>
 <p>Find me in app/views/tutees/index.html.erb</p>
 
-<% @tutees.each do |tutee| %>
-	<%= tutee.last_name %>
-	<%= link_to "Show", tutee_path(tutee) %>
-<% end %>
+<table border='1'>
+
+	<% @tutees.each do |tutee| %>
+
+		<tr>
+			<td> <%= tutee.first_name %> </td>
+			<td> <%= tutee.last_name %> </td>
+			<td> <%= link_to 'Show', tutee_path(tutee.tutee_id) %></td>
+			<td> <%= link_to 'Edit', edit_tutee_path(tutee.tutee_id) %></td>
+			<td> <%= link_to "Delete", tutee_path(tutee.tutee_id), method: :delete, data: { confirm: "Are you sure?" } %></td>
+		</tr>
+
+	<% end %>
+
+</table>

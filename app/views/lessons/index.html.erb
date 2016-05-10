@@ -1,2 +1,109 @@
-<h1>Lessons#index</h1>
-<p>Find me in app/views/lessons/index.html.erb</p>
+<body class="main-white">
+  
+  <!--navbar-dropdown-->   
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">English</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Math</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!">Tutee Profiles</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Progress Reports</a></li>
+  </ul>
+  <ul id="dropdown3" class="dropdown-content">
+    <li><a href="#!">Administrator</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Data Analysis Team</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Modules Team</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Tutors</a></li>
+  </ul>
+  <ul id="dropdown4" class="dropdown-content">
+    <li><a href="#!">A</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">B</a></li>
+  </ul>
+  
+  <!--navbar-->
+  <nav>
+    <div class="nav-wrapper main-white">
+      <ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
+        <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
+        <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down open-sans">
+        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--header-->
+  <div class="col s12">
+    <center>
+      <br>
+      <br>
+      <a class="main-green-text crete-round"><font size="6">Modules</font></a>
+      <br>
+      <%=image_tag("line3.png" , height:'55')%>
+      <br>
+      <a class="waves-effect waves-light btn btn-main-green open-sans">Upload</a>
+      <br>
+      <br>
+    </center>
+  </div>
+  
+  <!--table-->
+  <div class="container">
+    <table class="bordered">
+      <thead class="table-header">
+        <tr>
+          <th data-field="name">File Name</th>
+          <th data-field="subject">Subject</th>
+          <th data-field="datetime">Date & Time Uploaded</th>
+          <th data-field="uploaded">Uploaded By</th>
+          <th data-field="actions"><center>Actions</center></th>
+        </tr>
+      </thead>
+      <tbody class="open-sans">
+        <tr>
+          <td>English-Module-6</td>
+          <td>English</td>
+          <td>2015-12-04 11:59:30</td>
+          <td>Jakey Fausto</td>
+          <td>
+            <center>
+              <a class="waves-effect waves-light btn btn-main-green">View</a>
+              <a class="waves-effect waves-light btn btn-main-green">Update</a>
+              <a class="waves-effect waves-light btn btn-main-green">Delete</a>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container open-sans" align="right">
+    <a class="main-green-text" href="#">Download All</a>
+    <a class="main-green-text"> | </a>
+    <a class="main-green-text" href="#">Delete All</a>
+  </div>
+  
+  <!--pagination-->
+  <center>
+    <ul class="pagination open-sans">
+  		<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+			<li class="btn-main-green active"><a href="#!">1</a></li>
+			<li class="waves-effect"><a href="#!">2</a></li>
+			<li class="waves-effect"><a href="#!">3</a></li>
+			<li class="waves-effect"><a href="#!">4</a></li>
+			<li class="waves-effect"><a href="#!">5</a></li>
+			<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+	  </ul>
+  </center>
+
+</body>

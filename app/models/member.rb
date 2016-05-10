@@ -6,4 +6,12 @@ class Member < ActiveRecord::Base
 	has_many :evaluations
 	has_many :worksheets
 
+	def to_s
+		"#{self.last_name}, #{self.first_name}"
+	end
+	
+	def full_name
+		"#{self.last_name}, #{self.first_name}"
+	end
+
 end

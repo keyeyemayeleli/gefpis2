@@ -1,2 +1,20 @@
 <h1>Tprs#index</h1>
 <p>Find me in app/views/tprs/index.html.erb</p>
+
+<table border='1'>
+
+	<% @tprs.each do |tpr| %>
+
+		<tr>
+			<td> <%= tpr.week_no %> </td>
+			<td> <%= tpr.lesson.file_name %> </td>
+			<td> <%= tpr.member.first_name %> </td>
+			<td> <%= tpr.tutee.first_name %> </td>
+			<td> <%= link_to 'Show', tpr_path(tpr.tpr_id) %></td>
+			<td> <%= link_to 'Edit', edit_tpr_path(tpr.tpr_id) %></td>
+			<td> <%= link_to "Delete", tpr_path(tpr.tpr_id), method: :delete, data: { confirm: "Are you sure?" } %></td>
+		</tr>
+
+	<% end %>
+
+</table>
