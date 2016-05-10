@@ -1,19 +1,2 @@
 <h1>Lessons#index</h1>
 <p>Find me in app/views/lessons/index.html.erb</p>
-
-<table border='1'>
-
-	<% @lessons.each do |lesson| %>
-
-		<tr>
-			<td> <%= lesson.file_name %> </td>
-			<td> <%= lesson.subject %> </td>
-			<td> <%= lesson.member.first_name %> </td>
-			<td> <%= link_to 'Show', lesson_path(lesson.lesson_id) %></td>
-			<td> <%= link_to 'Edit', edit_lesson_path(lesson.lesson_id) %></td>
-			<td> <%= link_to "Delete", lesson_path(lesson.lesson_id), method: :delete, data: { confirm: "Are you sure?" } %></td>
-		</tr>
-
-	<% end %>
-
-</table>

@@ -1,19 +1,2 @@
 <h1>Members#edit</h1>
 <p>Find me in app/views/members/edit.html.erb</p>
-
-<%= simple_form_for @member do |f| %>
-
-	<%= f.input :member_id %>
-	<%= f.input :password %>
-	<%= f.input :first_name %>
-	<%= f.input :last_name %>
-	<%= f.input :middle_initial %>
-	<%= f.input :email_address %>
-	<%= f.input :contact_no %>
-	<%= f.input :arm %>
-	<%= f.input :committee %>
-	<%= f.input :year_course %>
-	<%= f.input :scholarship %>
-	<%= f.button :submit, "Add member" %>
-
-<% end %>

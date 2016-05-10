@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+       <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+    <body class="main-white">
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">English</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Math</a></li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+          <li><a href="#!">Tutee Profiles</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Progress Reports</a></li>
+        </ul>
+        <ul id="dropdown3" class="dropdown-content">
+          <li><a href="#!">Administrator</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Data Analysis Team</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Modules Team</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Tutors</a></li>
+        </ul>
+        <ul id="dropdown4" class="dropdown-content">
+          <li><a href="#!">A</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">B</a></li>
+        </ul>
+        <nav>
+          <div class="nav-wrapper main-white">
+            <ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
+              <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
+              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
+              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
+              <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
+            </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <div class="col s12">
+          <center>
+          <br>
+          <br>
+          <a class="main-green-text crete-round"><font size="6">Member Profile</font></a>
+         <div class="divider"></div>
+          </center>
+
+ <div class="row">
+  <div class="container">
+    <form class="col s12">
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="contact_number" type="text" class="validate">
+          <label for="contact_number">Contact Number</label>
+        </div>
+          <div class="input-field col s6">
+          <input type="date" class="datepicker">
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="email" type="text" class="validate">
+          <label for="email">Email Address</label>
+        </div>
+       <div class="input-field col s6">
+          <input id="year_course" type="text" class="validate">
+          <label for="year_course">Year & Course</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+    <select>
+      <option value="" disabled selected>Membership</option>
+      <option value="1">Old</option>
+      <option value="2">New</option>
+    </select>
+    <label>Membership</label>
+        </div>
+        <div class="input-field col s6">
+    <select>
+      <option value="" disabled selected>Scholarship</option>
+      <option value="1">None</option>
+      <option value="2">Financial Aid</option>
+      <option value="3">Academic Scholarship</option>
+    </select>
+    <label>Scholarship</label>
+        </div>
+      </div>
+
+      <div class="row">
+         <div class="input-field col s6">
+    <select>
+      <option value="" disabled selected>Committee</option>
+      <option value="1">Administrator</option>
+      <option value="2">Data Analysis Team</option>
+      <option value="3">Modules Team</option>
+      <option value="4">Tutors Team</option>
+    </select>
+    <label>Committee</label>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
