@@ -1,16 +1,190 @@
-<h1>Evaluations#new</h1>
-<p>Find me in app/views/evaluations/new.html.erb</p>
+<body class="main-white">
+  
+	<!--navbar-dropdown-->   
+  	<ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">English</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Math</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#!">Tutee Profiles</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Progress Reports</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+      <li><a href="#!">Administrator</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Data Analysis Team</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Modules Team</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Tutors</a></li>
+    </ul>
+    <ul id="dropdown4" class="dropdown-content">
+      <li><a href="#!">A</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">B</a></li>
+    </ul>
+  
+    <!--navbar-->
+    <nav>
+      <div class="nav-wrapper main-white">
+          <ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
+            <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
+            <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+      </div>
+    </nav>
 
-<%= simple_form_for @evaluation do |f| %>
+    <!--header-->  
+	<div class="col s12">
+	    <center>
+	      <br>
+	      <br>
+	      <a class="main-green-text crete-round"><font size="6">Create Evaluation</font></a>  
+	      <br>
+	      <%=image_tag("line3.png" , height:'55')%>
+	      <br>
+	    </center>
+	</div>
 
-	<%= f.association :member %>
-	<%= f.input :eval_name %>
-	<%= f.input :tutoring_comments %>
-	<%= f.input :math_module_comments %>
-	<%= f.input :math_sw_comments %>
-	<%= f.input :eng_comments %>
-	<%= f.input :eng_sw_comments %>
-	<%= f.input :suggestions %>
-	<%= f.button :submit, "Add evaluation" %>
+	<!--cards-->
+    <center>
+        <div class="container card open-sans main-white">
+    	    <div class="card-content">
+        	    <span class="card-title activator main-green-text">TUTORING<i class="material-icons right">more_vert</i></span>
+            	<form class="col s12">
+              		<div class="row">
+                		<div class="input-field col s12">
+                  			<textarea id="textarea1" class="materialize-textarea main-green-text"></textarea>
+                    		<label for="textarea1">
+                      		Kamusta ang ERYA ngayong week?
+                    		</label>
+                		</div>
+              		</div>
+            	</form>
+          	</div>
+          	<div class="card-reveal open-sans main-white">
+            	<span class="card-title grey-text text-darken-4">Kamusta ang ERYA ngayong week?<i class="material-icons right">close</i></span>
+            	<p>Sign-ups - Maayos ba or magulo yung sign-ups?; Meet ups - May nalate ba sa heads mo?; Transpo - na-accommodate ba ng jeep/s ang lahat ng tutors?; Pre-insertion - na-orient ba kayo ng maayos kung ano yung gagawin? May hindi ba nabigyan ng modules?; Actual tutoring - may problem/s ka bang na-encounter with your kid habang nagtuturo? Attentive ba siya at nagpaparticipate?; Post-Erya - May problems ka bang na-encounter after tutoring katulad ng sa pag-uwi, documentation, etc;</p>
+          	</div>
+        </div>
+    </center>
 
-<% end %>
+    <center>
+        <div class="container card open-sans main-white">
+          	<div class="card-content">
+            	<span class="card-title activator main-green-text">MATH MODULES<i class="material-icons right">more_vert</i></span>
+            	<form class="col s12">
+              		<div class="row">
+                		<div class="input-field col s12">
+                  			<textarea id="textarea1" class="materialize-textarea main-green-text"></textarea>
+                    		<label for="textarea1">
+                      		Kamusta ang Math module ng kid mo ngayong week?
+                    		</label>
+                		</div>
+              		</div>
+              		<div class="row">
+                		<div class="input-field col s12">
+                  			<textarea id="textarea1" class="materialize-textarea main-green-text"></textarea>
+                    		<label for="textarea1">
+                      		Eh yung seatwork?
+                    		</label>
+                		</div>
+              		</div>
+            	</form>
+          	</div>
+          	<div class="card-reveal open-sans main-white">
+            	<span class="card-title grey-text text-darken-4">Kamusta ang Math module ng kid mo ngayong week?<i class="material-icons right">close</i></span>
+            	<p>Malabo ba ang discussion ng topic? Mahirap bang intindihin for the kids? Kulang ba sa examples?</p>
+            	<span class="card-title grey-text text-darken-4">Eh yung seatwork?</span>
+            	<p>Malabo ba ang instructions ng seatwork? Masyado bang mahirap para sa kids? O masyado bang madali na walang room for challenge? Kulang ba ng items sa seatwork?</p>
+          	</div>
+        </div>
+    </center>    
+
+    <center>
+        <div class="container card open-sans main-white">
+          	<div class="card-content">
+            	<span class="card-title activator main-green-text">ENGLISH MODULES<i class="material-icons right">more_vert</i></span>
+            	<form class="col s12">
+              		<div class="row">
+                		<div class="input-field col s12">
+                  			<textarea id="textarea1" class="materialize-textarea main-green-text"></textarea>
+                    		<label for="textarea1">
+                      		Kamusta ang English module ng kid mo ngayong week?
+                    		</label>
+                		</div>
+              		</div>
+              		<div class="row">
+                		<div class="input-field col s12">
+                  			<textarea id="textarea1" class="materialize-textarea main-green-text"></textarea>
+                    		<label for="textarea1">
+                      		Eh yung seatwork?
+                    		</label>
+                		</div>
+              		</div>
+            	</form>
+          	</div>
+          	<div class="card-reveal open-sans main-white">
+            	<span class="card-title grey-text text-darken-4">Kamusta ang Math module ng kid mo ngayong week?<i class="material-icons right">close</i></span>
+            	<p>Malabo ba ang discussion ng topic? Mahirap bang intindihin for the kids? Kulang ba sa examples?</p>
+            	<span class="card-title grey-text text-darken-4">Eh yung seatwork?</span>
+            	<p>Malabo ba ang instructions ng seatwork? Masyado bang mahirap para sa kids? O masyado bang madali na walang room for challenge? Kulang ba ng items sa seatwork?</p>
+          	</div>
+        </div>
+    </center>        
+
+    <center>
+        <div class="container card open-sans main-white">
+          	<div class="card-content">
+            	<span class="card-title activator main-green-text">SUGGESTIONS AND SHARING OF EXPERIENCES<i class="material-icons right">more_vert</i></span>
+            	<form class="col s12">
+              		<div class="row">
+                		<div class="input-field col s12">
+                  			<textarea id="textarea1" class="materialize-textarea main-green-text"></textarea>
+                    		<label for="textarea1">
+                      		May suggestions ka ba para sa susunod na Erya?
+                    		</label>
+                		</div>
+              		</div>
+              		<div class="row">
+                		<div class="input-field col s12">
+                  			<textarea id="textarea1" class="materialize-textarea main-green-text"></textarea>
+                    		<label for="textarea1">
+                      		May gusto ka bang i-share tungkol sa Erya experience mo?
+                    		</label>
+                		</div>
+              		</div>
+            	</form>
+          	</div>
+          	<div class="card-reveal open-sans main-white">
+            	<span class="card-title grey-text text-darken-4">May suggestions ka ba para sa susunod na Erya?<i class="material-icons right">close</i></span>
+            	<p>Sa sign-ups, transpo, tutoring, kapwa-tutors, tutees, monitors and deputies, atbp.</p>
+            	<span class="card-title grey-text text-darken-4">May gusto ka bang i-share tungkol sa Erya experience mo?</span>
+            	<p>Kahit ano! Feel free to say anything! May mga quotable quotes ka ba from your tutee/s or kapwa-tutors? Or may realization and/or observation ka ba habang nag-e-Erya? Lagay mo na yan dito go!</p>
+          	</div>
+        </div>
+    </center> 
+
+    <div class="container open-sans" align="right">
+        <div class="row">
+    	    <div class="col s12">
+        	    <div class="btn btn-main-green">
+            		<span>Save</span>
+              	</div> 
+              	<div class="btn btn-main-green">
+                	<span>Save & Submit</span>
+              	</div> 
+            </div>                 
+        </div>    
+    </div>            
+
+</body>

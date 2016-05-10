@@ -1,13 +1,105 @@
-<h1>Lessons#edit</h1>
-<p>Find me in app/views/lessons/edit.html.erb</p>
+<body class="main-white">
+	
+	<!--navbar-dropdown-->   
+	<ul id="dropdown1" class="dropdown-content">
+    	<li><a href="#!">English</a></li>
+    	<li class="divider"></li>
+    	<li><a href="#!">Math</a></li>
+  	</ul>
+  	<ul id="dropdown2" class="dropdown-content">
+    	<li><a href="#!">Tutee Profiles</a></li>
+    	<li class="divider"></li>
+    	<li><a href="#!">Progress Reports</a></li>
+  	</ul>
+  	<ul id="dropdown3" class="dropdown-content">
+	    <li><a href="#!">Administrator</a></li>
+	    <li class="divider"></li>
+	    <li><a href="#!">Data Analysis Team</a></li>
+	    <li class="divider"></li>
+	    <li><a href="#!">Modules Team</a></li>
+	    <li class="divider"></li>
+	    <li><a href="#!">Tutors</a></li>
+  	</ul>
+  	<ul id="dropdown4" class="dropdown-content">
+	    <li><a href="#!">A</a></li>
+	    <li class="divider"></li>
+	    <li><a href="#!">B</a></li>
+  	</ul>
+  
+  	<!--navbar-->
+  	<nav>
+    	<div class="nav-wrapper main-white">
+      		<ul id="nav-mobile" class="left hide-on-med-and-down open-sans">
+		        <li><%= image_tag("gabay-tbs-logo-white.png", height: '64', class: 'main-green')%></li>
+		        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown1" data-beloworigin="true"><font size="4">&nbsp;Modules</font><i class="material-icons right">arrow_drop_down</i></a></li>
+		        <li><a href="#" class="main-green-text"><font size="4">&nbsp;Evaluations&nbsp;</font></a></li>
+		        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown2" data-beloworigin="true"><font size="4">&nbsp;Tutees</font><i class="material-icons right">arrow_drop_down</i></a></li>
+		        <li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown3" data-beloworigin="true"><font size="4">&nbsp;Members</font><i class="material-icons right">arrow_drop_down</i></i></a></li>
+		        <li><a href="#" class="main-green-text"><font size="4">&nbsp;Export&nbsp;</font></a></li>
+      		</ul>
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
+        		<li><a class="dropdown-button main-green-text" href="#!" data-activates="dropdown4" data-beloworigin="true"><font size="4">&nbsp;[Admin] Jakey Fausto</font><i class="material-icons right">arrow_drop_down</i></a></li>
+      		</ul>
+    	</div>
+  	</nav>
 
-<%= simple_form_for @lesson do |f| %>
+    <!--header-->
+    <div class="col s12">
+	    <center>
+    		<br>
+          	<br>
+          	<a class="main-green-text crete-round"><font size="6">Upload Module</font></a>
+          	<br>
+          	<%=image_tag("line3.png" , height:'55')%>
+          	<br>
+        </center>
+    </div>
 
-	<%= f.association :member %>
-	<%= f.input :file_name %>
-	<%= f.input :subject %>
-	<%= f.input :upload_date %>
-	<%= f.input :topic %>
-	<%= f.button :submit, "Edit module" %>
+    <!--card-->
+    <div class="row open-sans">
+        <div class="col s4 offset-s4">
+            <div class="card">
+	            <div class="card-content">
+     	        	<div class="row">
+        	        	<div class="input-field col s12">
+                    		<input value="English-Module-3" id="first_name2" type="text" class="validate">
+                    		<label class="active" for="first_name2">Selected Module File</label>
+                  		</div>
+                  	<div class="col s12">
+                    	<form action="#">
+                      		<label class="active" for="first_name2">New Module File</label>
+                      		<div class="file-field input-field">
+                        		<div class="btn btn-main-green">
+                          			<span>Browse</span>
+                          			<input type="file">
+                        		</div>
+                        		<div class="file-path-wrapper">
+                          			<input class="file-path validate" type="text">
+                        		</div>
+                      		</div>
+                    	</form>
+                  	</div>
+                  	<div class="input-field col s12">
+                    	<label class="active" for="first_name2">Subject</label>
+                    		<select>
+                      			<option value="1">English</option>
+                      			<option value="2">Math</option>
+                      			<option value="3">Science</option>
+                    		</select>
+                  	</div>
+                </div>
+                <div class="row">
+                  	<div class="col s12">
+                    	<div class="btn btn-main-green">
+                      		<span>Back</span>
+                    	</div>
+                    	<div class="btn btn-main-green">
+                      		<span>Update</span>
+                    	</div>
+                  	</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<% end %>
+</body>
